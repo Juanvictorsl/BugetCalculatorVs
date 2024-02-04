@@ -21,7 +21,7 @@ public class AluminiumFrames {
         System.out.println("Área do portão: " + String.format("%.2f", area) + "m².");
 
         qtdFramesMeters = (2 * lengthMeters) + (2 * heigthMeters);
-        System.out.println("A quantidade de varas em metros é: " + qtdFramesMeters + "m.");
+        System.out.println("A quantidade de varas em metros é: " + String.format("%.2f", qtdFramesMeters) + "m.");
 
         qtdFramesUnits = (int) (qtdFramesMeters / frameStick);
         if (qtdFramesMeters % 1 == 0 && qtdFramesMeters % frameStick == 0) {
