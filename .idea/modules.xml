@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/BugetCalculatorVs.iml" filepath="$PROJECT_DIR$/BugetCalculatorVs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Gate/Gate.iml" filepath="$PROJECT_DIR$/Gate/Gate.iml" />
     </modules>
   </component>
 </project>
