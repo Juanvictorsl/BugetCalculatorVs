@@ -7,20 +7,15 @@ public class AluminiumFrames {
 
     public static int frameStick = 6;
 
-    public static int frameQuantity() {
-        Scanner scanner = new Scanner(System.in);
+    public static int frameQuantity(float lengthMeters, float heightMeters) {
         // float lengthMeters, heightMeters;
 
         // The code block calculate the quantity of aluminium frames in meters.
-        System.out.print("Inofrme oc comprimento do portão em metros: ");
-        float lengthMeters = scanner.nextFloat();
-        System.out.print("Informe a altura do portão em metros: ");
-        float heigthMeters = scanner.nextFloat();
 
-        area = lengthMeters * heigthMeters;
+        area = lengthMeters * heightMeters;
         System.out.println("Área do portão: " + String.format("%.2f", area) + "m².");
 
-        qtdFramesMeters = (2 * lengthMeters) + (2 * heigthMeters);
+        qtdFramesMeters = (2 * lengthMeters) + (2 * heightMeters);
         System.out.println("A quantidade de varas em metros é: " + String.format("%.2f", qtdFramesMeters) + "m.");
 
         qtdFramesUnits = (int) (qtdFramesMeters / frameStick);
@@ -29,7 +24,7 @@ public class AluminiumFrames {
         } else {
             qtdFramesUnits = (int) Math.ceil(qtdFramesUnits);
             qtdFramesUnits++;
-            System.out.println("A quantidade de varas necessárias para fabricar a estrutura é: " + qtdFramesUnits + " unidades.");
+            System.out.println("A quantidade de varas necessárias para fabricar a estrutura da moldura é: " + qtdFramesUnits + " unidades.");
         }
         return 0;
     }
