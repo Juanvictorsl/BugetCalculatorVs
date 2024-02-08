@@ -12,7 +12,8 @@ public class Main {
         heightMeters = scanner.nextFloat();
 
        AluminiumFrames aluminiumFrames = new AluminiumFrames();
-       int quantity = aluminiumFrames.frameQuantity(lengthMeters, heightMeters);
+        aluminiumFrames.frameQuantity(lengthMeters, heightMeters);
+
 
     }
 }
